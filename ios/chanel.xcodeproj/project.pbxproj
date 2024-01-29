@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008B7884797C4F7E9008203D /* Urbanist-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C078F40B87E24D1D84B8F818 /* Urbanist-Bold.ttf */; };
 		00E356F31AD99517003FC87E /* chanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* chanelTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-chanel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-chanel.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		193491214E6940EC8012F6A8 /* Urbanist-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A01151B9DEC4B0CA4B0CE5A /* Urbanist-Regular.ttf */; };
+		293A1A9BE7D24E338642B584 /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA257D1B0A64088B7256456 /* Ubuntu-BoldItalic.ttf */; };
+		340AB03C080A4777A44B6553 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBD403CB30B410EBB33D511 /* Ubuntu-Medium.ttf */; };
+		6B9E0681F1F84F78B125D887 /* Urbanist-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3769306818F462AA7CDFD37 /* Urbanist-Medium.ttf */; };
+		6F327DDDF0004104AAD54C9C /* Urbanist-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43B5F3A3FE64403B860943F /* Urbanist-Thin.ttf */; };
+		729FEB4BD8A7416D9527D24E /* Urbanist-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B64DFA5F30454D3F8D846CE0 /* Urbanist-ExtraBold.ttf */; };
+		76427D4471F54CBEB9437DDC /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE33C9C0F4B4C5AA3E74222 /* Ubuntu-Bold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-chanel-chanelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-chanel-chanelTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8E9AAEB351CB4DE5A4FB983D /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 133FC136138C482C8CADDDB4 /* Ubuntu-Light.ttf */; };
+		9F977400E15643E7A097C9AF /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49AF3156A5984C039FE3818F /* Ubuntu-LightItalic.ttf */; };
+		A105642910914675BFE17665 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F562FF7797C242D4A1577485 /* Ubuntu-MediumItalic.ttf */; };
+		B80766C548424DA9BBF62FB5 /* Urbanist-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2D1AC4CC650490EB1FF1F42 /* Urbanist-Light.ttf */; };
+		D261C427967248BEB07B167A /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B0C3C26174FD8A8CA301E /* Ubuntu-Italic.ttf */; };
+		D70221E485C345DF8E7CEC68 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17135F2E78AF47DC91D69C3D /* Ubuntu-Regular.ttf */; };
+		FCBEFED350B84157BF27B246 /* Urbanist-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAC6A6D36BD542499CE31940 /* Urbanist-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +45,35 @@
 		00E356EE1AD99517003FC87E /* chanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chanelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* chanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chanelTests.m; sourceTree = "<group>"; };
+		133FC136138C482C8CADDDB4 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Light.ttf"; path = "../app/assets/fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* chanel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chanel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = chanel/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = chanel/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = chanel/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = chanel/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = chanel/main.m; sourceTree = "<group>"; };
+		17135F2E78AF47DC91D69C3D /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Regular.ttf"; path = "../app/assets/fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-chanel-chanelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chanel-chanelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5B0C3C26174FD8A8CA301E /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Italic.ttf"; path = "../app/assets/fonts/Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-chanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chanel.debug.xcconfig"; path = "Target Support Files/Pods-chanel/Pods-chanel.debug.xcconfig"; sourceTree = "<group>"; };
+		49AF3156A5984C039FE3818F /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-LightItalic.ttf"; path = "../app/assets/fonts/Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-chanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chanel.release.xcconfig"; path = "Target Support Files/Pods-chanel/Pods-chanel.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-chanel-chanelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chanel-chanelTests.debug.xcconfig"; path = "Target Support Files/Pods-chanel-chanelTests/Pods-chanel-chanelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-chanel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chanel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A01151B9DEC4B0CA4B0CE5A /* Urbanist-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Urbanist-Regular.ttf"; path = "../app/assets/fonts/Urbanist-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = chanel/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-chanel-chanelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chanel-chanelTests.release.xcconfig"; path = "Target Support Files/Pods-chanel-chanelTests/Pods-chanel-chanelTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DBD403CB30B410EBB33D511 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Medium.ttf"; path = "../app/assets/fonts/Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		B43B5F3A3FE64403B860943F /* Urbanist-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Urbanist-Thin.ttf"; path = "../app/assets/fonts/Urbanist-Thin.ttf"; sourceTree = "<group>"; };
+		B64DFA5F30454D3F8D846CE0 /* Urbanist-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Urbanist-ExtraBold.ttf"; path = "../app/assets/fonts/Urbanist-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C078F40B87E24D1D84B8F818 /* Urbanist-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Urbanist-Bold.ttf"; path = "../app/assets/fonts/Urbanist-Bold.ttf"; sourceTree = "<group>"; };
+		CAE33C9C0F4B4C5AA3E74222 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Bold.ttf"; path = "../app/assets/fonts/Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		EAC6A6D36BD542499CE31940 /* Urbanist-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Urbanist-SemiBold.ttf"; path = "../app/assets/fonts/Urbanist-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EDA257D1B0A64088B7256456 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-BoldItalic.ttf"; path = "../app/assets/fonts/Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F2D1AC4CC650490EB1FF1F42 /* Urbanist-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Urbanist-Light.ttf"; path = "../app/assets/fonts/Urbanist-Light.ttf"; sourceTree = "<group>"; };
+		F3769306818F462AA7CDFD37 /* Urbanist-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Urbanist-Medium.ttf"; path = "../app/assets/fonts/Urbanist-Medium.ttf"; sourceTree = "<group>"; };
+		F562FF7797C242D4A1577485 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-MediumItalic.ttf"; path = "../app/assets/fonts/Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +136,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4057E519D56242A7A8DBECB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAE33C9C0F4B4C5AA3E74222 /* Ubuntu-Bold.ttf */,
+				EDA257D1B0A64088B7256456 /* Ubuntu-BoldItalic.ttf */,
+				1F5B0C3C26174FD8A8CA301E /* Ubuntu-Italic.ttf */,
+				133FC136138C482C8CADDDB4 /* Ubuntu-Light.ttf */,
+				49AF3156A5984C039FE3818F /* Ubuntu-LightItalic.ttf */,
+				8DBD403CB30B410EBB33D511 /* Ubuntu-Medium.ttf */,
+				F562FF7797C242D4A1577485 /* Ubuntu-MediumItalic.ttf */,
+				17135F2E78AF47DC91D69C3D /* Ubuntu-Regular.ttf */,
+				C078F40B87E24D1D84B8F818 /* Urbanist-Bold.ttf */,
+				B64DFA5F30454D3F8D846CE0 /* Urbanist-ExtraBold.ttf */,
+				F2D1AC4CC650490EB1FF1F42 /* Urbanist-Light.ttf */,
+				F3769306818F462AA7CDFD37 /* Urbanist-Medium.ttf */,
+				6A01151B9DEC4B0CA4B0CE5A /* Urbanist-Regular.ttf */,
+				EAC6A6D36BD542499CE31940 /* Urbanist-SemiBold.ttf */,
+				B43B5F3A3FE64403B860943F /* Urbanist-Thin.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +175,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				4057E519D56242A7A8DBECB5 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -243,6 +297,21 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				76427D4471F54CBEB9437DDC /* Ubuntu-Bold.ttf in Resources */,
+				293A1A9BE7D24E338642B584 /* Ubuntu-BoldItalic.ttf in Resources */,
+				D261C427967248BEB07B167A /* Ubuntu-Italic.ttf in Resources */,
+				8E9AAEB351CB4DE5A4FB983D /* Ubuntu-Light.ttf in Resources */,
+				9F977400E15643E7A097C9AF /* Ubuntu-LightItalic.ttf in Resources */,
+				340AB03C080A4777A44B6553 /* Ubuntu-Medium.ttf in Resources */,
+				A105642910914675BFE17665 /* Ubuntu-MediumItalic.ttf in Resources */,
+				D70221E485C345DF8E7CEC68 /* Ubuntu-Regular.ttf in Resources */,
+				008B7884797C4F7E9008203D /* Urbanist-Bold.ttf in Resources */,
+				729FEB4BD8A7416D9527D24E /* Urbanist-ExtraBold.ttf in Resources */,
+				B80766C548424DA9BBF62FB5 /* Urbanist-Light.ttf in Resources */,
+				6B9E0681F1F84F78B125D887 /* Urbanist-Medium.ttf in Resources */,
+				193491214E6940EC8012F6A8 /* Urbanist-Regular.ttf in Resources */,
+				FCBEFED350B84157BF27B246 /* Urbanist-SemiBold.ttf in Resources */,
+				6F327DDDF0004104AAD54C9C /* Urbanist-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +613,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -572,6 +641,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -579,7 +649,14 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -616,7 +693,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -636,6 +713,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -643,7 +721,14 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
