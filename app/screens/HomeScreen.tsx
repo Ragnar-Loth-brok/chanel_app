@@ -1,42 +1,33 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
-import Animated, {
-  Extrapolation,
-  LinearTransition,
-  interpolate,
-  useAnimatedScrollHandler,
-  useAnimatedStyle,
-  useSharedValue,
-  withSpring,
-  withTiming,
-} from 'react-native-reanimated';
-
-import {common} from '../utils/preStyles';
-import {colors} from '../utils/colors';
-import {IMAGE_HEIGHT, IMAGE_URLS, MAX_LENGTH} from '../utils/dummy';
-import {hp} from '../utils/config';
+import {View, StyleSheet} from 'react-native';
+import {useSharedValue} from 'react-native-reanimated';
 import {GestureDetector, Gesture} from 'react-native-gesture-handler';
+
 import ImageUI from '../components/home/ImageUI';
+
+import {IMAGE_HEIGHT, IMAGE_URLS, MAX_LENGTH} from '../utils/dummy';
+import {colors} from '../utils/colors';
+import {common} from '../utils/preStyles';
 
 export default function HomeScreen(): React.JSX.Element {
   const position = useSharedValue<number>(0);
   const updatedPosition = useSharedValue<number>(0);
 
   const pan = Gesture.Pan()
-    .onStart(e => {
-      // console.log(position.value);
-    })
     .onUpdate(e => {
       if (
         position.value + updatedPosition.value + e.translationY < 50 &&
-        position.value + updatedPosition.value + e.translationY >
-          -MAX_LENGTH * IMAGE_HEIGHT
+        updatedPosition.value + e.translationY >
+          -(MAX_LENGTH - 2) * IMAGE_HEIGHT
       ) {
         updatedPosition.value = position.value + e.translationY;
       }
     })
     .onEnd(e => {
-      if (updatedPosition.value + e.translationY < 50) {
+      if (position.value + e.translationY < -(MAX_LENGTH - 2) * IMAGE_HEIGHT) {
+        // Do Nothing
+        console.log('End of Slides');
+      } else if (updatedPosition.value + e.translationY < 50) {
         position.value += e.translationY;
         const value = -Math.round(position.value / IMAGE_HEIGHT);
         updatedPosition.value = value * -IMAGE_HEIGHT;

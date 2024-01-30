@@ -1,19 +1,19 @@
 interface ImageStructure {
   id: number;
   url: string;
+  title: string;
+  subTitle: string;
 }
 
-export const RouteNames = {
-  Splash: 'Splash',
-  Home: 'Home',
-} as const;
-
-type RootStackParamList = {
-  [RouteNames.Splash]: undefined;
-  [RouteNames.Home]: {
-    id: number;
-  };
+export enum RouteConstants {
+  Splash = 'Splash',
+  Home = 'Home',
 };
 
-export type {ImageStructure, RootStackParamList};
+type RootStackParamList = {
+  [RouteConstants.Splash]: undefined;
+  [RouteConstants.Home]: undefined;
+};
 
+
+export type {ImageStructure, RootStackParamList};

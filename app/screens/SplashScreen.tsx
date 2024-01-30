@@ -1,36 +1,74 @@
-import React, {useCallback} from 'react';
-import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
+import React, {useCallback, useEffect} from 'react';
+import {View, StyleSheet, Pressable} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
 import MaskedView from '@react-native-masked-view/masked-view';
 import Animated, {
   BounceInUp,
-  FlipInYLeft,
+  FadeInUp,
   FlipInYRight,
   LinearTransition,
   ZoomInUp,
+  interpolate,
+  useAnimatedStyle,
+  useSharedValue,
+  withDelay,
+  withSpring,
+  withTiming,
 } from 'react-native-reanimated';
 
 import {Fonts, common} from '../utils/preStyles';
-import {STATUSBAR_HEIGHT, fp, hp, hpp, wp} from '../utils/config';
+import {fp, hp, hpp, wp} from '../utils/config';
 import {colors} from '../utils/colors';
-import {useNavigation} from '@react-navigation/native';
-import {StackNavigationProp} from '@react-navigation/stack';
-import {RootStackParamList, RouteNames} from '../utils/types';
+import {RootStackParamList, RouteConstants} from '../utils/types';
+import {CONSTANT_STRING} from '../utils/string';
 
 const image = require('../assets/images/2.jpeg');
 
 export default function SplashScreen(): React.JSX.Element {
-  const navigation = useNavigation<StackNavigationProp<any>>();
+  const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
+  const animate = useSharedValue<number>(0);
 
   const navigateHome = useCallback(() => {
-    // console.log('Pressing');
-
-    navigation.navigate(RouteNames.Home);
+    navigation.navigate(RouteConstants.Home);
   }, [navigation]);
+
+  const animateImage = useAnimatedStyle(() => {
+    const scale = interpolate(animate.value, [0, 1], [2, 1]);
+    return {
+      transform: [{scale: withSpring(scale)}],
+    };
+  }, []);
+
+  const animateContainer = useAnimatedStyle(() => {
+    const scale = interpolate(animate.value, [0, 1], [1, 1.1]);
+    const translateY = interpolate(
+      animate.value,
+      [0, 0.3, 0.7, 1],
+      [0, 5, -5, 0],
+    );
+    return {
+      transform: [
+        {scale: withSpring(scale)},
+        {translateY: withSpring(translateY)},
+      ],
+    };
+  }, []);
+
+  useEffect(() => {
+    animate.value = withDelay(500, withTiming(1, {duration: 5000}));
+  }, []);
 
   return (
     <View style={styles.container}>
+      <Animated.Text
+        layout={LinearTransition}
+        entering={FadeInUp.delay(1000)}
+        style={styles.title}>
+        {CONSTANT_STRING.name}
+      </Animated.Text>
       <MaskedView
-        style={common.full_screen}
+        style={[common.full_screen]}
         maskElement={
           <View style={[common.full_screen, common.center]}>
             <Animated.View
@@ -42,8 +80,14 @@ export default function SplashScreen(): React.JSX.Element {
                 <Animated.View
                   layout={LinearTransition}
                   entering={BounceInUp.delay(1000).springify()}>
-                  <Animated.View style={[]}>
-                    <View style={[styles.centerContainer, styles.centerContainerDimension, styles.shadow]} />
+                  <Animated.View style={[animateContainer]}>
+                    <View
+                      style={[
+                        styles.centerContainer,
+                        styles.centerContainerDimension,
+                        styles.shadow,
+                      ]}
+                    />
                   </Animated.View>
                 </Animated.View>
               </Animated.View>
@@ -51,14 +95,13 @@ export default function SplashScreen(): React.JSX.Element {
           </View>
         }>
         <View style={[common.full_screen, common.center, styles.subContainer]}>
-          <Pressable style={styles.centerContainerDimension} onPress={navigateHome}>
-            <Image
-              // source={{
-                //   // uri: 'https://images.unsplash.com/photo-1585131552912-34847f8a5c60?q=80&w=3410&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-              //   uri: 'https://images.unsplash.com/photo-1590156118008-98c92159207b?q=80&w=3435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-              // }}
+          <Pressable
+            style={[styles.centerContainerDimension]}
+            onPress={navigateHome}>
+            <Animated.Image
+              layout={LinearTransition}
               source={image}
-              style={styles.imageDimension}
+              style={[styles.imageDimension, animateImage]}
               resizeMode="cover"
             />
           </Pressable>
@@ -80,6 +123,7 @@ const styles = StyleSheet.create({
   centerContainer: {
     borderRadius: wp(50),
     backgroundColor: colors.bgP,
+    marginTop: hpp(50),
   },
   centerContainerDimension: {
     width: wp(85),
@@ -88,13 +132,15 @@ const styles = StyleSheet.create({
   imageDimension: {
     width: hp(40),
     height: wp(100),
-    transform: [{translateY: -hp(5)}],
   },
   title: {
+    position: 'absolute',
     fontFamily: Fonts.S_700,
     fontSize: fp(42),
     letterSpacing: 5,
-    color: colors.bgS,
+    color: colors.bgP,
+    alignSelf: 'center',
+    marginTop: hpp(150),
   },
   shadow: {
     shadowColor: colors.bgP,

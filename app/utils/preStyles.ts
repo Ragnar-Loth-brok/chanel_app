@@ -1,27 +1,30 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 
 export const common = StyleSheet.create({
-    center: {
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    h_center: {
-        alignItems: 'center',
-    },
-    v_center: {
-        justifyContent: 'center',
-    },
-    s_center: {
-        alignSelf: 'center',
-    },
-    t_center: {
-        textAlign: 'center',
-    },
-    full_screen: {
-        flex: 1,
-        width: '100%',
-    }
-})
+  center: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  h_center: {
+    alignItems: 'center',
+  },
+  v_center: {
+    justifyContent: 'center',
+  },
+  s_center: {
+    alignSelf: 'center',
+  },
+  t_center: {
+    textAlign: 'center',
+  },
+  full_screen: {
+    flex: 1,
+    width: '100%',
+  },
+  flex: {
+    flex: 1,
+  },
+});
 
 interface Font_Structure {
   P_700: string;
