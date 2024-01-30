@@ -1,6 +1,6 @@
 # Chanel App Scrolling Animation - React Native
 
-Explore a captivating prototype showcasing seamless scrolling animations reminiscent of popular Chanel apps, coupled with a visually stunning masking effect on the splash screen. This React Native project is a testament to advanced animation techniques, providing a glimpse into the developer's expertise in creating engaging and aesthetically pleasing mobile experiences.
+Explore a captivating prototype showcasing seamless scrolling animations reminiscent of popular Chanel app, coupled with a visually stunning masking effect on the Splash Screen. This React Native project is a testament to advanced animation techniques, providing a glimpse into the developer's expertise in creating engaging and aesthetically pleasing mobile experiences.
 
 
 ## Demo video:
@@ -29,6 +29,7 @@ Explore a captivating prototype showcasing seamless scrolling animations reminis
   <img src="screenshots/ss2.png" alt="Home Screen" width="200" height="400">
   <img src="screenshots/ss3.png" alt="Home Screen" width="200" height="400">
   <img src="screenshots/ss4.png" alt="Home Screen" width="200" height="400">
+  <img src="screenshots/ss5.png" alt="Home Screen" width="200" height="400">
 </div
 
 
